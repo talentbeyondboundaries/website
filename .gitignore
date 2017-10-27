@@ -130,7 +130,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/node,sass,linux,macos,windows
-
-
-# Ignore the distribution folder
-dist
