@@ -1,0 +1,14 @@
+{% macro active(page) %}
+<header class="site-header" role="banner">
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="index.html" class="nav__link {%if page == 'home' %} nav__link--active {% endif %}">Home</a>
+            </li>
+            <li>
+                <a href="other.html" class="nav__link {%if page == 'other' %} nav__link--active {% endif %}">Other</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+{% endmacro %}
