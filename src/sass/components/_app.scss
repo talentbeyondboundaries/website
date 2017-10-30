@@ -1,0 +1,14 @@
+.tbb-footer {
+	color: $color-white;
+	background-color: $color-gray-darkest;
+	text-align: center;
+
+	p:first-child {
+		margin-top: 0;
+	}
+
+	p:last-child {
+		margin-top: 2em;
+		margin-bottom: 0;
+	}
+}
