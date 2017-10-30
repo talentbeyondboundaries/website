@@ -1,4 +1,7 @@
-// Base stuff
+// Vendor styles
+@import 'vendor/flexboxgrid';
+
+// Base styles
 @import 'base/normalize';
 @import 'base/variables';
 @import 'base/mixins';
