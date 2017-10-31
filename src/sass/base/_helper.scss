@@ -1,14 +1,32 @@
 // Backgrounds
 .bg {
+
 	&--white { background-color: $color-white; }
 }
 
 // Text
 .text {
+
+	&--white {
+		color: $color-white;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			color: inherit;
+		}
+	}
+
 	&--blue { color: $color-blue; }
+
 	&--center { text-align: center; }
+
 	&--spaced { letter-spacing: 0.1em; }
+
 	&--uppercase { text-transform: uppercase; }
+
 	&--small { font-size: 12px; }
 }
 

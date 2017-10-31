@@ -12,6 +12,21 @@
 		margin-bottom: 1.5rem;
 	}
 
+	&--bg {
+		padding-top: 5em;
+		padding-bottom: 5em;
+		background: no-repeat 50% / cover transparent;
+
+		@include breakpoint(768, min) {
+			padding-top: 10em;
+			padding-bottom: 10em;
+		}
+	}
+
+	&__content {
+		max-width: 550px;
+	}
+
 	> p:last-child {
 		margin-bottom: 0;
 	}
