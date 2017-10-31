@@ -1,3 +1,7 @@
+$animation-duration: 0.25s;
+
+// COLORS
+
 $color-white: #fff;
 $color-black: #000;
 $color-blackish: #2f2f2f;
@@ -5,18 +9,19 @@ $color-blackish: #2f2f2f;
 $color-body-bg: #f4f5f9;
 $color-body-text: #a8b1b8;
 
-$color-cta-red: #e84f3d;
-$color-cta-red-alt: #e7637b;
-$color-cta-blue: #309eed;
-$color-cta-green: #29c14a;
-$color-cta-green-alt: #75d17e;
-$color-cta-orange: #f7a37e;
+$color-red: #e84f3d;
+$color-red-alt: #e7637b;
+$color-blue: #0eb1e3;
+$color-green: #29c14a;
+$color-green-alt: #75d17e;
+$color-orange: #f7a37e;
+$color-yellow: #dec328;
 
 $color-note-success: #e8ffef;
 $color-note-error: #f8e8e8;
 $color-note-warning: #fcf2e8;
 
-$color-gray-darkest: #272B2B;
+$color-gray-darkest: #272b2b;
 $color-gray-dark: #53565b;
 $color-gray: #888;
 $color-gray-light: #cbcbcb;

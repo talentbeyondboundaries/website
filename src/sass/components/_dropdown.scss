@@ -1,0 +1,43 @@
+.dropdown {
+	position: relative;
+
+	&:hover &__nav {
+		transform: none;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__toggle {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		cursor: pointer;
+	}
+
+	&__nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 200px;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(-1em);
+		transition: all 0.1s ease;
+		background-color: $color-white;
+
+		> li {
+			padding: 0.3em 1em;
+			transition: all $animation-duration ease;
+		}
+
+		> li:hover {
+			background-color: $color-gray-lightest;
+		}
+
+		a {
+			display: block;
+		}
+	}
+}

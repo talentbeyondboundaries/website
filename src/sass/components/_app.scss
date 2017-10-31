@@ -1,3 +1,63 @@
+.tbb-header {
+	background-color: $color-white;
+	box-shadow: inset 0 1px 1px rgba($color-white, 0.6), 0 0 5px rgba($color-black, 0.6);
+	font-size: 13px;
+
+	&__logo {
+		max-width: 200px;
+		padding: 0.5em 0;
+	}
+
+	&__nav {
+		display: flex;
+		margin: 0 2em;
+
+		> li {
+			display: flex;
+			align-items: center;
+		}
+
+		> li:not(:last-child) {
+			margin-right: 2em;
+		}
+	}
+
+	&__nav > li > a,
+	&__nav > li > .dropdown__toggle {
+
+		&:hover {
+			color: $color-blue;
+		}
+	}
+
+	.tbb-header__donate {
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-weight: 100;
+	}
+
+	.container-fluid {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.social-icons {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.social-icons > li {
+		display: flex;
+		align-items: center;
+	}
+
+	a:not(.btn) {
+		color: inherit;
+	}
+}
+
 .tbb-footer {
 	color: $color-white;
 	background-color: $color-gray-darkest;

@@ -1,0 +1,92 @@
+.btn {
+	display: inline-block;
+	padding: 0.83em 1.5em;
+	border: 0;
+	border-radius: 0;
+	transition: all $animation-duration;
+	color: $color-white;
+	background-color: $color-blue;
+	cursor: pointer;
+	text-align: center;
+
+	&:hover {
+		color: $color-white;
+		background-color: $color-yellow;
+	}
+
+	&--big {
+		padding: 0.6em 2em;
+		font-size: 1.2em;
+	}
+
+	&--default {
+		color: $color-gray;
+		background-color: $color-gray-lightest;
+
+		&:hover {
+			color: $color-gray;
+			background-color: darken($color-gray-lightest, 5%);
+		}
+	}
+
+	&--green {
+		background-color: $color-green;
+
+		&:hover {
+			background-color: darken($color-green, 5%);
+		}
+	}
+
+	&--red {
+		background-color: $color-red;
+
+		&:hover {
+			background-color: darken($color-red, 5%);
+		}
+	}
+
+	&--red-alt {
+		background-color: $color-red-alt;
+
+		&:hover {
+			background-color: darken($color-red-alt, 5%);
+		}
+	}
+
+	&--black {
+		background-color: $color-blackish;
+
+		&:hover {
+			background-color: lighten($color-blackish, 5%);
+		}
+	}
+}
+
+.btn--close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2.3em;
+	height: 2.3em;
+	color: inherit;
+	cursor: pointer;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 49%;
+		left: 25%;
+		width: 50%;
+		height: 2px;
+		background-color: currentcolor;
+	}
+
+	&:before {
+		transform: rotateZ(-45deg);
+	}
+
+	&:after {
+		transform: rotateZ(45deg);
+	}
+}

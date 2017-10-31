@@ -13,7 +13,7 @@ body {
 }
 
 .container-fluid {
-	max-width: 77.75em;
+	max-width: 73rem;
 }
 
 h1,
@@ -50,20 +50,20 @@ p {
 
 a {
 	text-decoration: none;
-	color: $color-cta-blue;
-	transition: all 0.15s;
+	color: $color-blue;
+	transition: all $animation-duration;
 
 	&:hover {
-		color: darken($color-cta-blue, 8%);
+		color: darken($color-blue, 8%);
 	}
 }
 
 ul,
 ol {
-	margin: 1em 0;
+	margin: 0;
 	padding: 0;
 	list-style: none;
-	line-height: 1.7;
+	line-height: 1.6;
 }
 
 img {
