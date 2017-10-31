@@ -71,8 +71,8 @@
 	color: inherit;
 	cursor: pointer;
 
-	&:before,
-	&:after {
+	&::before,
+	&::after {
 		content: '';
 		position: absolute;
 		top: 49%;
@@ -82,11 +82,19 @@
 		background-color: currentcolor;
 	}
 
-	&:before {
+	&::before {
 		transform: rotateZ(-45deg);
 	}
 
-	&:after {
+	&::after {
 		transform: rotateZ(45deg);
+	}
+}
+
+.inline-buttons {
+	margin-top: 1.5em;
+
+	.btn:not(:first-child) {
+		margin-left: 1em;
 	}
 }

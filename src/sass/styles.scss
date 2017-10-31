@@ -5,14 +5,16 @@
 @import 'base/normalize';
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/helper';
 @import 'base/global';
 
 // Components
 @import 'components/app';
+@import 'components/block';
 @import 'components/button';
 @import 'components/dropdown';
 @import 'components/section';
 @import 'components/social-icons';
 
-
 // Page specific partials
+@import 'views/homepage';

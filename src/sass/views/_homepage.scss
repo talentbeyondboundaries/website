@@ -1,0 +1,14 @@
+.home-block-grid {
+
+	.block {
+		height: 100%;
+		background-color: rgba($color-blue, 0.9);
+	}
+
+	.block__icon {
+		display: flex;
+		align-items: flex-end;
+		height: 5em;
+		width: 5em;
+	}
+}

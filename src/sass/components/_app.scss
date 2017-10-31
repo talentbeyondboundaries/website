@@ -1,7 +1,8 @@
 .tbb-header {
-	background-color: $color-white;
-	box-shadow: inset 0 1px 1px rgba($color-white, 0.6), 0 0 5px rgba($color-black, 0.6);
+	position: relative;
 	font-size: 13px;
+	box-shadow: inset 0 1px 1px rgba($color-white, 0.6), 0 0 5px rgba($color-black, 0.6);
+	background-color: $color-white;
 
 	&__logo {
 		max-width: 200px;

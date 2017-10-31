@@ -1,0 +1,19 @@
+// Backgrounds
+.bg {
+	&--white { background-color: $color-white; }
+}
+
+// Text
+.text {
+	&--blue { color: $color-blue; }
+	&--center { text-align: center; }
+	&--spaced { letter-spacing: 0.1em; }
+	&--uppercase { text-transform: uppercase; }
+	&--small { font-size: 12px; }
+}
+
+.narrow-wrapper {
+	max-width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+}
