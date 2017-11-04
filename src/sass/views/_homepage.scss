@@ -98,6 +98,7 @@
 .prof-grid {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	margin-bottom: 3em;
 
 	&-title {
@@ -118,5 +119,33 @@
 		display: block;
 		margin-top: 1em;
 		color: $color-text-grey;
+	}
+}
+
+.home-partners {
+
+	p {
+		margin-bottom: 3em;
+		color: $color-text-grey;
+	}
+
+	&__grid {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		div {
+			margin: 1em 1.5em;
+		}
+	}
+
+	img {
+		max-width: 7em;
+	}
+
+	.horizontal-logo {
+		max-height: 80px;
+		max-width: none;
 	}
 }
