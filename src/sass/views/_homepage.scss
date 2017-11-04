@@ -76,6 +76,10 @@
 	.section {
 		position: relative;
 		z-index: 10;
+
+		&__title {
+			margin-bottom: 1.5em;
+		}
 	}
 
 	.block {
@@ -88,5 +92,31 @@
 		align-items: flex-end;
 		height: 5em;
 		width: 5em;
+	}
+}
+
+.prof-grid {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3em;
+
+	&-title {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	&__block {
+		width: 130px;
+		text-align: center;
+	}
+
+	img {
+		height: 110px;
+	}
+
+	span {
+		display: block;
+		margin-top: 1em;
+		color: $color-text-grey;
 	}
 }
