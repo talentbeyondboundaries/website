@@ -14,7 +14,7 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: Arial, sans-serif;
+	font-family: 'Lato', Arial, sans-serif;
 	color: $color-gray;
 	background-color: $color-body-bg;
 }
@@ -82,4 +82,8 @@ img {
 
 textarea {
 	max-width: 100%;
+}
+
+b, strong {
+	font-weight: 700;
 }
