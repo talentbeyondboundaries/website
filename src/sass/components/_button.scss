@@ -66,10 +66,11 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 2.3em;
-	height: 2.3em;
+	width: 2.5em;
+	height: 2.5em;
 	color: inherit;
 	cursor: pointer;
+	transition: all $animation-duration ease;
 
 	&::before,
 	&::after {
@@ -88,6 +89,10 @@
 
 	&::after {
 		transform: rotateZ(45deg);
+	}
+
+	&:hover {
+		color: $color-black;
 	}
 }
 

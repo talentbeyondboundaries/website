@@ -138,25 +138,34 @@
         <p class="text--small text--uppercase text--light">Talent Beyond Boundaries has a cooperation agreement with UNHCR and also receives support from multiple entities:</p>
         <div class="home-partners__grid">
             <div>
-                <img src="images/homepage/partners/ico-unhcr.jpg" alt="UNHCR">
+                <img class="popup-toggle" src="images/homepage/partners/ico-unhcr.jpg" alt="UNHCR" data-popup-target=".popup--unhcr">
             </div>
             <div>
-                <img src="images/homepage/partners/ico-usa.png" alt="The United States Department Bureau of Population, Refugees, and Migration">
+                <img class="popup-toggle" src="images/homepage/partners/ico-usa.png" alt="The United States Department Bureau of Population, Refugees, and Migration" data-popup-target=".popup--usa">
             </div>
             <div>
-                <img class="horizontal-logo" src="images/homepage/partners/ico-wb.png" alt="The World Bank">
+                <img class="horizontal-logo popup-toggle" src="images/homepage/partners/ico-wb.png" alt="The World Bank" data-popup-target=".popup--twb">
             </div>
             <div>
-                <img src="images/homepage/partners/ico-tent.png" alt="The Tent Foundation">
+                <img class="popup-toggle" src="images/homepage/partners/ico-tent.png" alt="The Tent Foundation" data-popup-target=".popup--tent">
             </div>
             <div>
-                <img class="horizontal-logo" src="images/homepage/partners/ico-gif.png" alt="Global Innovation Fund">
+                <img class="horizontal-logo popup-toggle" src="images/homepage/partners/ico-gif.png" alt="Global Innovation Fund" data-popup-target=".popup--gif">
             </div>
             <div>
-                <img class="horizontal-logo" src="images/homepage/partners/ico-rpd.jpg" alt="The Roy and Patricia Disney Family Foundation">
+                <img class="horizontal-logo popup-toggle" src="images/homepage/partners/ico-rpd.jpg" alt="The Roy and Patricia Disney Family Foundation" data-popup-target=".popup--rpd">
             </div>
         </div>
     </div>
 </div>
 
+{% endblock %}
+
+{% block popups %}
+    {% include "popups/homepage/unhcr.html" %}
+    {% include "popups/homepage/usa.html" %}
+    {% include "popups/homepage/twb.html" %}
+    {% include "popups/homepage/tent.html" %}
+    {% include "popups/homepage/gif.html" %}
+    {% include "popups/homepage/rpd.html" %}
 {% endblock %}
