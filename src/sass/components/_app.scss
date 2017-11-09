@@ -6,10 +6,32 @@
 	box-shadow: inset 0 1px 1px rgba($color-white, 0.6), 0 0 5px rgba($color-black, 0.6);
 	background-color: $color-white;
 	color: $color-black;
+	z-index: 30;
+
+	@include breakpoint(1024) {
+		.tbb-header__nav,
+		.social-icons {
+			display: none;
+		}
+
+		.container-fluid {
+			padding-left: 0;
+		}
+	}
+
+	@include breakpoint(1024, min) {
+		.offcanvas-toggle {
+			display: none;
+		}
+	}
 
 	&__logo {
 		max-width: 200px;
 		padding: 0.5em 0;
+
+		@include breakpoint(768) {
+			max-width: 150px;
+		}
 	}
 
 	&__nav {
@@ -45,6 +67,7 @@
 	.container-fluid {
 		display: flex;
 		justify-content: space-between;
+		padding-right: 0;
 	}
 
 	.social-icons {

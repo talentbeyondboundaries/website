@@ -6,4 +6,9 @@ $(document).ready(function() {
 			video[0].play();
 		});
 	}
+
+	$('.offcanvas-toggle, .offcanvas-dismiss').on('click', function() {
+		$('.offcanvas-toggle').toggleClass('offcanvas-toggle--active');
+		$('.offcanvas').toggleClass('offcanvas--active');
+	});
 });

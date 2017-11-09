@@ -1,18 +1,10 @@
-{% macro active(page) %}
-<header class="tbb-header" role="banner">
-    <div class="container-fluid">
-        <span class="offcanvas-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-        <a href="#" class="tbb-header__logo">
-            <img src="images/logo.png" alt="Talent Beyond Boundaries">
-        </a>
-        <ul class="tbb-header__nav">
-            <li class="dropdown">
-              <span class="dropdown__toggle">About Us</span>
-              <ul class="dropdown__nav">
+<div class="offcanvas">
+    <div class="offcanvas__overlay offcanvas-dismiss"></div>
+    <div class="offcanvas__inner">
+        <ul class="offcanvas__menu">
+            <li>
+              <span>About Us</span>
+              <ul>
                   <li><a href="#">Vision &amp; Impact</a></li>
                   <li><a href="#">Our People</a></li>
                   <li><a href="#">Board &amp; Advisors</a></li>
@@ -20,18 +12,18 @@
                   <li><a href="#">Contact Us</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <span class="dropdown__toggle">Our Work</span>
-              <ul class="dropdown__nav">
+            <li>
+              <span>Our Work</span>
+              <ul>
                 <li><a href="#">Pilot Project</a></li>
                 <li><a href="#">Talent Catalog</a></li>
               </ul>
             </li>
             <li><a href="#">For Employees</a></li>
             <li><a href="#">For Job Seekers</a></li>
-            <li class="dropdown">
-              <span class="dropdown__toggle">Get Involved</span>
-              <ul class="dropdown__nav">
+            <li>
+              <span>Get Involved</span>
+              <ul>
                 <li><a href="#">Partner With Us</a></li>
                 <li><a href="#">Join Our Team</a></li>
                 <li><a href="#">Donate</a></li>
@@ -44,7 +36,5 @@
             <li><a href="https://www.youtube.com/channel/UCClJU4xIHJYjajl-o98c40A"><img src="images/social/youtube.svg" title="Youtube"></a></li>
             <li><a href="https://www.linkedin.com/company-beta/6638257"><img src="images/social/linkedin.svg" title="LinkedIn"></a></li>
         </ul>
-        <a href="#" class="btn btn--blue tbb-header__donate">Donate</a>
     </div>
-</header>
-{% endmacro %}
+</div>
