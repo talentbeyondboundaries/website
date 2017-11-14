@@ -1,14 +1,20 @@
 .home-section--1 {
-	min-height: calc(100vh - 67px);
+	// min-height: calc(100vh - 67px);
 	background-image: url('../images/homepage/section-1.jpg');
 	background-position: 60% 20%;
 
-	h1 {
-		font-size: 36px;
+	@include breakpoint(768, min) {
+
+		.section__title {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 1.1em;
+		}
 	}
 
 	p {
-		font-size: 1.1em;
 		margin-top: 1rem;
 		margin-bottom: 0;
 
@@ -19,22 +25,51 @@
 }
 
 .home-section--2 {
-	min-height: 100vh;
+	// min-height: 100vh;
 	background-image: url('../images/homepage/section-2.jpg');
 	background-position: 50% 20%;
 
-	.section__content {
-		max-width: 450px;
+	@include breakpoint(768, min) {
+
+		.section__content {
+			max-width: 450px;
+		}
 	}
 
 	.inline-buttons {
 
+		@include breakpoint(540) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
 		.btn {
 			width: 160px;
+
+			@include breakpoint(540) {
+				flex-grow: 1;
+			}
+
+			@include breakpoint(370) {
+				width: 100%;
+				margin: 0;
+
+				&:not(:last-child) {
+					margin-bottom: 1em;
+				}
+			}
 		}
 
 		&:last-child {
 			margin-top: 1em;
+		}
+	}
+
+	@include breakpoint(768, min) {
+
+		.section__title {
+			font-size: 2.4em;
+			font-weight: bold;
 		}
 	}
 }
@@ -45,19 +80,10 @@
 
 	video {
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: 50%;
+		top: 50%;
 		z-index: 2;
-
-		@media (min-aspect-ratio: 16/9) {
-			width: 100%;
-			height: auto;
-		}
-
-		@media (max-aspect-ratio: 16/9) {
-			width: auto;
-			height: 100%;
-		}
+		transform: translate3d(-50%, -50%, 0);
 
 		@include breakpoint(768) {
 			display: none;
@@ -77,6 +103,11 @@
 	.section {
 		position: relative;
 		z-index: 10;
+
+		@include breakpoint(768, min) {
+			padding-top: 10em;
+			padding-bottom: 10em;
+		}
 
 		&__title {
 			margin-bottom: 1.5em;
@@ -102,6 +133,7 @@
 	}
 
 	[class*="col"] {
+
 		@include breakpoint(1024) {
 			margin-bottom: 1em;
 		}

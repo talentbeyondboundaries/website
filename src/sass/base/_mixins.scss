@@ -5,7 +5,7 @@
 // ^ converts to (min-width: 1st arg) and (max-width: 2nd arg)
 
 @mixin breakpoint($point, $point-to: max) {
-	$breakpoints: 1200, 1024, 980, 900, 768, 640, 480, 400;
+	$breakpoints: 1200, 1024, 980, 900, 768, 640, 540, 480, 400, 370;
 
 	@if $point-to == max or $point-to == min {
 		@for $i from 1 through length($breakpoints) {

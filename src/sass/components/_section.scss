@@ -5,29 +5,60 @@
 	@include breakpoint(768, min) {
 		padding-top: 4em;
 		padding-bottom: 4em;
+
+		&__content {
+			max-width: 50%;
+		}
 	}
 
 	&__title {
 		margin-top: 0;
 		margin-bottom: 1rem;
-	}
 
-	&--bg {
-		padding-top: 5em;
-		padding-bottom: 5em;
-		background: no-repeat 50% / cover transparent;
-
-		@include breakpoint(768, min) {
-			padding-top: 10em;
-			padding-bottom: 10em;
+		@include breakpoint(768) {
+			font-size: 24px;
 		}
-	}
-
-	&__content {
-		max-width: 50%;
 	}
 
 	> p:last-child {
 		margin-bottom: 0;
+	}
+}
+
+.section--bg {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	background: no-repeat 50% / cover transparent;
+
+	@include breakpoint(768) {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-image: none;
+
+		.container-fluid {
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			background-color: $color-blue;
+		}
+
+		> img {
+			width: 100%;
+			max-height: 370px;
+			object-fit: cover;
+			object-position: top;
+		}
+
+		.btn {
+			border: 1px solid;
+		}
+	}
+
+	@include breakpoint(768, min) {
+		padding-top: 10em;
+		padding-bottom: 10em;
+
+		> img {
+			display: none;
+		}
 	}
 }
