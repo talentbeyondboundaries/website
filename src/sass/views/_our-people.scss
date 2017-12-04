@@ -8,6 +8,27 @@
 		font-weight: 100;
 		font-size: 1.3em;
 	}
+
+	.team-block__image {
+		position: relative;
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			transition: box-shadow $animation-duration ease;
+			z-index: 1;
+		}
+
+		&:hover::after {
+			box-shadow: inset 0 0 0 8px $color-blue;
+		}
+	}
 }
 
 .team-block {

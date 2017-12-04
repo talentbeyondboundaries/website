@@ -41,11 +41,16 @@
 		max-width: 90%;
 		max-height: 90%;
 		width: 700px;
+		padding: 1em;
 		background-color: $color-white;
 		overflow: auto;
 		z-index: 1;
 		transition: opacity 0.7s ease;
 		opacity: 0;
+
+		@include breakpoint(768, min) {
+			padding: 2em;
+		}
 	}
 
 	&__header,
@@ -82,6 +87,8 @@
 	}
 }
 
+// Homepage partners section
+
 .popup--partners {
 
 	h2 {
@@ -89,14 +96,9 @@
 	}
 
 	.popup__inner {
-		padding: 1em;
 
 		@include breakpoint(768) {
 			text-align: center;
-		}
-
-		@include breakpoint(768, min) {
-			padding: 2em;
 		}
 	}
 
@@ -122,6 +124,50 @@
 			img {
 				max-height: 200px;
 			}
+		}
+	}
+}
+
+// Our People team grid popups
+
+.popup--team {
+
+	img {
+		border-radius: 50%;
+		width: 250px;
+	}
+
+	[class*='col'] {
+		text-transform: uppercase;
+
+		@include breakpoint(768, max) {
+			text-align: center;
+		}
+
+		h2 {
+			color: $color-blue;
+		}
+
+		h2,
+		p {
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		p {
+			margin-top: 0.2em;
+			margin-bottom: 0.2em;
+			line-height: 1.4;
+			color: darken($color-body-text, 2%);
+		}
+
+		span {
+			font-size: 0.9em;
+			color: lighten($color-body-text, 7%);
 		}
 	}
 }

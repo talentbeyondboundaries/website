@@ -1,0 +1,19 @@
+{% macro data(data) %}
+    <div class="popup popup--team {{ data.selector }}">
+        <div class="popup__overlay popup__dismiss"></div>
+        <div class="popup__inner">
+            <span class="btn--close popup__dismiss"></span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-5">
+                    <img src="{{ data.image }}" alt="{{ data.name }}">
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <h2>{{ data.name }}</h2>
+                    <p>{{ data.title }}</p>
+                    <span>{{ data.location }}</span>
+                </div>
+            </div>
+            <p>{{ data.description }}</p>
+        </div>
+    </div>
+{% endmacro %}
