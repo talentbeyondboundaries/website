@@ -62,3 +62,35 @@
 		}
 	}
 }
+
+// Used in combination with section--bg to serve as a page hero section
+// with title + short paragraph
+.section--hero {
+
+	.section__content {
+		position: relative;
+		margin: 5em auto;
+		width: 60%;
+		max-width: none;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -1em;
+			left: 50%;
+			width: 100px;
+			height: 3px;
+			background-color: currentcolor;
+			transform: translateX(-50%);
+		}
+	}
+
+	.section__title {
+		font-size: 3.5em;
+	}
+
+	p {
+		font-size: 1.5em;
+		font-style: italic;
+	}
+}
