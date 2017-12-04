@@ -70,8 +70,8 @@
 	.section__content {
 		position: relative;
 		margin: 5em auto;
-		width: 60%;
-		max-width: none;
+		max-width: 600px;
+		width: 100%;
 
 		&::before {
 			content: '';
@@ -86,11 +86,27 @@
 	}
 
 	.section__title {
-		font-size: 3.5em;
+		font-size: 1.6em;
+
+		@include breakpoint(768, min) {
+			font-size: 2.5em;
+		}
+
+		@include breakpoint(1024, min) {
+			font-size: 3.5em;
+		}
 	}
 
 	p {
-		font-size: 1.5em;
 		font-style: italic;
+		font-size: 1.1em;
+
+		@include breakpoint(768, min) {
+			font-size: 1.3em;
+		}
+
+		@include breakpoint(1024, min) {
+			font-size: 1.5em;
+		}
 	}
 }
