@@ -91,16 +91,29 @@
 }
 
 .tbb-footer {
+	text-align: center;
 	color: $color-white;
 	background-color: $color-gray-darkest;
-	text-align: center;
 
-	p:first-child {
-		margin-top: 0;
+	li {
+		font-size: 0.9em;
+		margin: 0.7em 0;
 	}
 
-	p:last-child {
-		margin-top: 2em;
-		margin-bottom: 0;
+	&__info {
+
+		ul {
+			margin-top: 1.5em;
+		}
+
+		li {
+			margin-bottom: 0.2em;
+		}
+
+		li:last-child {
+			margin-top: 0.5em;
+			margin-bottom: 0;
+			font-size: 0.8em;
+		}
 	}
 }
