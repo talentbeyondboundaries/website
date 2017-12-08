@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-{% include "head.html" %}
+<head>
+    {% include "head.html" %}
+    <title>{% block title %}Talent Beyond Boundaries{% endblock %}</title>
+    {% block css %}
+        <link rel="stylesheet" href="css/styles.css">
+    {% endblock %}
+</head>
 <body>
     {% block header %} {% endblock %}
     <main class="tbb-content" role="main">
