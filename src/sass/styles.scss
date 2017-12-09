@@ -13,6 +13,7 @@
 @import 'components/block';
 @import 'components/button';
 @import 'components/dropdown';
+@import 'components/input';
 @import 'components/offcanvas';
 @import 'components/popup';
 @import 'components/section';
@@ -20,6 +21,7 @@
 
 // Page specific partials
 @import 'views/board-advisors';
+@import 'views/contact-us';
 @import 'views/funders';
 @import 'views/homepage';
 @import 'views/our-people';
