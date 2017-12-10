@@ -86,10 +86,12 @@
 	}
 
 	.section__title {
+		margin-bottom: 0.5em;
 		font-size: 1.6em;
 
 		@include breakpoint(768, min) {
 			font-size: 2.5em;
+			margin-bottom: 0;
 		}
 
 		@include breakpoint(1024, min) {
@@ -98,6 +100,7 @@
 	}
 
 	p {
+		margin: 0;
 		font-weight: 100;
 		font-style: italic;
 		font-size: 1.1em;
@@ -109,5 +112,24 @@
 		@include breakpoint(1024, min) {
 			font-size: 1.5em;
 		}
+	}
+}
+
+.section--cta {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	text-align: center;
+	color: $color-white;
+
+	.section__title {
+		margin: 0;
+		font-size: 1em;
+		font-weight: bold;
+		line-height: 1.5;
+		color: inherit;
+	}
+
+	a:not(:hover) {
+		color: inherit;
 	}
 }

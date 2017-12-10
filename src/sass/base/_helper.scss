@@ -34,6 +34,13 @@
 	&--light   { font-weight: 100; }
 	&--regular { font-weight: 400; }
 	&--bold    { font-weight: 700; }
+
+	&--highlight-gray {
+		padding: 0.15em 0.5em;
+		line-height: 1.7;
+		background-color: $color-gray-dark;
+		color: $color-white;
+	}
 }
 
 .narrow-wrapper {
