@@ -10,4 +10,13 @@
 	&--bullets {
 		list-style: disc;
 	}
+
+	&--numbers {
+		list-style: decimal;
+	}
+
+	&--spaced li {
+		margin-top: 0.8em;
+		margin-bottom: 0.8em;
+	}
 }

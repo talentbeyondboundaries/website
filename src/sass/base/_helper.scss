@@ -28,8 +28,10 @@
 	&--spaced { letter-spacing: 0.18rem; }
 
 	&--uppercase { text-transform: uppercase; }
+	&--underline { text-decoration: underline; }
 
 	&--small { font-size: 12px; }
+	&--big   { font-size: 18px; }
 
 	&--light   { font-weight: 100; }
 	&--regular { font-weight: 400; }

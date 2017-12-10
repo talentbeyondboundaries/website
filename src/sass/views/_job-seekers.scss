@@ -1,0 +1,23 @@
+.section--job-cta {
+	color: $color-white;
+
+	.section__title,
+	a:not(.btn) {
+		color: inherit;
+	}
+
+	a:not(.btn):hover {
+		color: darken($color-blue, 15%);
+	}
+}
+
+.section--job-testimony {
+
+	.testimony {
+		max-width: 500px;
+
+		@include breakpoint(768, min) {
+			margin-left: 0;
+		}
+	}
+}
