@@ -66,12 +66,32 @@
 // Used in combination with section--bg to serve as a page hero section
 // with title + short paragraph
 .section--hero {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color-black, 0.2);
+
+		@include breakpoint(768) {
+			content: none;
+		}
+	}
 
 	.section__content {
 		position: relative;
-		margin: 5em auto;
-		max-width: 600px;
+		margin: 3em auto;
+		max-width: 650px;
 		width: 100%;
+
+		@include breakpoint(768, min) {
+			margin-top: 5em;
+			margin-bottom: 5em;
+		}
 
 		&::before {
 			content: '';
@@ -90,12 +110,12 @@
 		font-size: 1.6em;
 
 		@include breakpoint(768, min) {
-			font-size: 2.5em;
+			font-size: 2.7em;
 			margin-bottom: 0;
 		}
 
 		@include breakpoint(1024, min) {
-			font-size: 3.5em;
+			font-size: 3.7em;
 		}
 	}
 
