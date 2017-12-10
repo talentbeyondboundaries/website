@@ -1,0 +1,28 @@
+.testimony {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	background-color: rgba($color-gray-dark, 0.8);
+	color: $color-white;
+
+	&,
+	&__inner {
+		padding: 1.7em;
+	}
+
+	&__inner {
+		border: 1px solid $color-white;
+	}
+
+	p:first-child {
+		margin-top: 0;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}

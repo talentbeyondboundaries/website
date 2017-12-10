@@ -1,0 +1,13 @@
+.list {
+	margin: 1em 0;
+	padding-left: 2em;
+
+	li {
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+	}
+
+	&--bullets {
+		list-style: disc;
+	}
+}

@@ -1,0 +1,61 @@
+.step-grid {
+	display: flex;
+
+	&__col {
+		position: relative;
+		width: 100%;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		text-align: center;
+
+		&:not(:last-child)::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 1px;
+			height: 100%;
+			max-height: 150px;
+			background-color: $color-body-text;
+		}
+	}
+
+	&__counter {
+		position: absolute;
+		top: 0;
+		right: 1em;
+		color: $color-blue;
+	}
+
+	&__icon {
+		display: block;
+		height: 100px;
+
+		img {
+			max-height: 100%;
+		}
+	}
+
+	p {
+		font-size: 12px;
+	}
+}
+
+
+.step-grid--employers {
+	padding-top: 1.5em;
+
+	@media (max-width: 940px) {
+		justify-content: center;
+		flex-wrap: wrap;
+
+		.step-grid__col {
+			width: 250px;
+			margin-bottom: 1.5em;
+
+			&::after {
+				content: none;
+			}
+		}
+	}
+}
