@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	// Initialize ScrollReveal JS plugin on Parallax elements
+	window.sr = ScrollReveal({
+		delay: 500,
+		duration: 500,
+		scale: 1,
+		distance: 0
+	});
+	sr.reveal('[data-parallax] .container-fluid');
+
 	if ($('#home-vid').length) {
 		var video = $('#home-vid');
 		video.on('canplaythrough', function() {
