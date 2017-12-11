@@ -1,7 +1,4 @@
 .home-section--1 {
-	// min-height: calc(100vh - 67px);
-	background-image: url('../images/homepage/section-1.jpg');
-	background-position: 60% 20%;
 
 	@include breakpoint(768, min) {
 
@@ -25,9 +22,6 @@
 }
 
 .home-section--2 {
-	// min-height: 100vh;
-	background-image: url('../images/homepage/section-2.jpg');
-	background-position: 50% 20%;
 
 	@include breakpoint(768, min) {
 
