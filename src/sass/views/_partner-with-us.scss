@@ -1,7 +1,10 @@
 .section--partner-cta {
 	position: relative;
-	padding-top: 4em;
-	padding-bottom: 4em;
+
+	@include breakpoint(768, min) {
+		padding-top: 4em;
+		padding-bottom: 4em;
+	}
 
 	&::before {
 		content: '';
