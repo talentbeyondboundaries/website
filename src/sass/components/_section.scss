@@ -28,10 +28,10 @@
 		display: none;
 		position: absolute;
 		left: 50%;
-		margin-left: -64px;
 		color: $color-white;
 		cursor: pointer;
 		transition: color $animation-duration ease;
+		transform: translateX(-50%);
 
 		@include breakpoint(768, min) {
 			display: inline-block;
