@@ -23,6 +23,29 @@
 	> p:last-child {
 		margin-bottom: 0;
 	}
+
+	&__slide-btn {
+		display: none;
+		position: absolute;
+		left: 50%;
+		margin-left: -64px;
+		color: $color-white;
+		cursor: pointer;
+		transition: color $animation-duration ease;
+
+		@include breakpoint(768, min) {
+			display: inline-block;
+		}
+
+		&:hover {
+			color: $color-blue;
+		}
+
+		svg {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
 }
 
 .section--bg {
