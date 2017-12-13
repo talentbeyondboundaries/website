@@ -30,7 +30,8 @@
 		left: 50%;
 		color: $color-white;
 		cursor: pointer;
-		transition: color $animation-duration ease;
+		opacity: 0;
+		transition: color $animation-duration ease, opacity $animation-duration * 2 ease 0.5s;
 		transform: translateX(-50%);
 
 		@include breakpoint(768, min) {

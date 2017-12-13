@@ -38,7 +38,8 @@ $(document).ready(function() {
 	// Set slider slide down button position (to hug bottom of the screen)
 	(function() {
 		$('.section__slide-btn').css({
-			'top': $(window).innerHeight() - 150
+			'top': $(window).innerHeight() - 150,
+			'opacity': 1
 		}).on('click', function() {
 			var target = $(this).parent().next();
 			var scrollTo = target.offset().top;
