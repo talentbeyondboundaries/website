@@ -135,6 +135,25 @@
 	}
 }
 
+// Page header hero full height
+[data-parallax] {
+
+	@include breakpoint(768) {
+		background-color: $color-blue;
+	}
+}
+
+.tbb-content > [data-parallax]:first-child {
+
+	@include breakpoint(768, min) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: calc(100vh - 67px);
+	}
+}
+
 .section--cta {
 	padding-top: 3em;
 	padding-bottom: 3em;

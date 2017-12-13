@@ -1,6 +1,7 @@
 .home-section--1 {
 
 	@include breakpoint(768, min) {
+		padding-bottom: 20em;
 
 		.section__title {
 			font-size: 36px;
