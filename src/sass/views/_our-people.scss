@@ -73,6 +73,23 @@
 	}
 }
 
+.team-block--missing {
+
+	.team-block__image {
+		background-color: $color-gray-lightest;
+		cursor: auto;
+
+		&::after {
+			content: none;
+		}
+	}
+
+	img {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 .team-block__image {
 	max-width: 190px;
 	margin-left: auto;
