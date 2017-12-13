@@ -167,7 +167,7 @@
 	}
 }
 
-.tbb-content > [data-parallax]:first-child {
+.tbb-content > [data-parallax]:first-child:not(.no-resize) {
 
 	@include breakpoint(768, min) {
 		display: flex;
