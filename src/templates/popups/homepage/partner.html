@@ -1,0 +1,11 @@
+{% macro data(data) %}
+    <div class="popup popup--small popup--partners {{ data.selector }}">
+        <div class="popup__overlay popup__dismiss"></div>
+        <div class="popup__inner">
+            <span class="btn--close popup__dismiss"></span>
+            <h2 class="text--blue">{{ data.name }}</h2>
+            <span class="partner-title text--uppercase text--light">{{ data.title }}</span>
+            <p>{{ data.description }}</p>
+        </div>
+    </div>
+{% endmacro %}

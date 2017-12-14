@@ -23,7 +23,19 @@
 
 .home-section--2 {
 
+	@include breakpoint(768) {
+		color: $color-white;
+
+		.section__title {
+			color: inherit;
+		}
+	}
+
 	@include breakpoint(768, min) {
+
+		.section__title {
+			color: $color-blue;
+		}
 
 		.section__content {
 			max-width: 450px;
@@ -69,7 +81,48 @@
 }
 
 .home-block-grid {
+	background-color: $color-blue;
+
+	.block {
+		height: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
+
+		@include breakpoint(1024) {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__title {
+			font-size: 14px;
+			letter-spacing: 0.05em;
+		}
+
+		&__text {
+			font-size: 15px;
+			line-height: 1.35;
+		}
+	}
+
+	.block__icon {
+		display: flex;
+		align-items: flex-end;
+		height: 5em;
+		width: 5em;
+	}
+
+	[class*="col"] {
+
+		@include breakpoint(1024) {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+.home-video-wrapper {
 	position: relative;
+	padding-bottom: 25%;
 	overflow: hidden;
 
 	video {
@@ -92,45 +145,6 @@
 		height: 100%;
 		background: url('../images/homepage/video-poster.jpg') no-repeat 70% 50% / cover transparent;
 		z-index: 1;
-	}
-
-	.section {
-		position: relative;
-		z-index: 10;
-
-		@include breakpoint(768, min) {
-			padding-top: 10em;
-			padding-bottom: 10em;
-		}
-
-		&__title {
-			margin-bottom: 1.5em;
-		}
-	}
-
-	.block {
-		height: 100%;
-		background-color: rgba($color-blue, 0.9);
-
-		@include breakpoint(1024) {
-			max-width: 400px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-
-	.block__icon {
-		display: flex;
-		align-items: flex-end;
-		height: 5em;
-		width: 5em;
-	}
-
-	[class*="col"] {
-
-		@include breakpoint(1024) {
-			margin-bottom: 1em;
-		}
 	}
 }
 
