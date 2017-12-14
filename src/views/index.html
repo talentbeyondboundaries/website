@@ -157,6 +157,8 @@
 {% endblock %}
 
 {% block popups %}
+    {% include "popups/shared/watch-video.html" %}
+
     {% import "popups/shared/video.html" as videoPopup %}
 
     {{ videoPopup.data({
