@@ -47,6 +47,28 @@
 			vertical-align: middle;
 		}
 	}
+
+	&__caption {
+		position: absolute;
+		right: 2em;
+		bottom: 2em;
+		max-width: 40%;
+		font-weight: 100;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		text-align: center;
+
+		@include breakpoint(768) {
+			display: none;
+		}
+
+		small {
+			display: inline-block;
+			margin-top: 0.3em;
+			font-size: 0.85em;
+		}
+	}
 }
 
 .section--bg {
@@ -164,6 +186,10 @@
 
 	@include breakpoint(768) {
 		background-color: $color-blue;
+
+		.container-fluid {
+			transition: none !important;
+		}
 	}
 }
 
