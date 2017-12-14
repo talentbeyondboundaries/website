@@ -26,7 +26,7 @@
             <p>War and conflict have forced millions of skilled people to find refuge in places where they are unable to work legally. Talent Beyond Boundaries is working to connect this often excluded talent pool with employers around the world who are searching for skilled workers. The pathways that Talent Beyond Boundaries is establishing allows refugees to find stability and employers to gain new talent, while reducing the number of dependents on aid.</p>
             <div class="inline-buttons">
                 <a href="vision-impact.html" class="btn">Learn More</a>
-                <a href="#" class="btn">Play Video</a>
+                <a href="#" class="btn popup-toggle" data-popup-target=".popup--tbb-video">Play Video</a>
             </div>
         </div>
     </div>
@@ -157,6 +157,13 @@
 {% endblock %}
 
 {% block popups %}
+    {% import "popups/shared/video.html" as videoPopup %}
+
+    {{ videoPopup.data({
+        url: 'https://www.youtube.com/embed/DV3zMDD0MS0',
+        selector: 'popup--tbb-video'
+    }) }}
+
     {% import "popups/homepage/partner.html" as popup %}
 
     {{ popup.data({

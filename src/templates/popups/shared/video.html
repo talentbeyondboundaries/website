@@ -1,0 +1,11 @@
+{% macro data(data) %}
+    <div class="popup popup--video {{ data.selector }}">
+        <div class="popup__overlay popup__dismiss"></div>
+        <div class="popup__inner">
+            <span class="btn--close popup__dismiss"></span>
+            <div class="video-wrapper">
+                <iframe src="{{ data.url }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

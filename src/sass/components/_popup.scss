@@ -92,7 +92,6 @@
 }
 
 // Homepage partners section
-
 .popup--partners {
 
 	h2 {
@@ -131,7 +130,6 @@
 }
 
 // Our People team grid popups
-
 .popup--team {
 
 	img {
@@ -171,5 +169,38 @@
 			font-size: 0.9em;
 			color: lighten($color-body-text, 7%);
 		}
+	}
+}
+
+// Video popup
+.popup--video {
+
+	.popup__inner {
+		width: 900px;
+		padding: 3em 0 0;
+		background-color: transparent;
+	}
+
+	.btn--close {
+		width: 3em;
+		height: 3em;
+		color: $color-white;
+
+		&:hover {
+			transform: scale(1.3);
+		}
+	}
+
+	.video-wrapper {
+		position: relative;
+		padding-top: 56.25%;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
