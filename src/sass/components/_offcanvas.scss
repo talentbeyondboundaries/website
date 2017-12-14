@@ -38,21 +38,25 @@
 }
 
 .offcanvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	padding-top: 67px;
 	pointer-events: none;
 
-	&,
-	&__offcanvas {
+	@include breakpoint(768) {
+		padding-top: 54px;
+	}
+
+	&__overlay {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-	}
-
-	@include breakpoint(768) {
-		padding-top: 54px;
 	}
 
 	&--active {

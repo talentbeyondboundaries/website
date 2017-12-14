@@ -47,12 +47,13 @@ $(document).ready(function() {
 
 	// Set slider slide down button position (to hug bottom of the screen)
 	(function() {
+		var headerHeight = $('.tbb-header').innerHeight();
 		$('.section__slide-btn').css({
 			'top': $(window).innerHeight() - 150,
 			'opacity': 1
 		}).on('click', function() {
 			var target = $(this).parent().next();
-			var scrollTo = target.offset().top;
+			var scrollTo = target.offset().top - headerHeight;
 			$('html, body').stop().animate({
 				scrollTop: scrollTo
 			}, 700);
