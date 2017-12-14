@@ -125,16 +125,16 @@
 	padding-bottom: 25%;
 	overflow: hidden;
 
+	@include breakpoint(768) {
+		display: none;
+	}
+
 	video {
 		position: absolute;
 		left: 50%;
 		top: 50%;
 		z-index: 2;
 		transform: translate3d(-50%, -50%, 0);
-
-		@include breakpoint(768) {
-			display: none;
-		}
 	}
 
 	.video-bg {
