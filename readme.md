@@ -3,7 +3,7 @@ Can we add some instructions here to allow people who just understand a bit of H
 Suggested topics:
 * How to update production website from here
 * How to change basic content
-* Where to put downloadable files like PDFs (current code refers to https://docs.wixstatic.com) - and to link to those files
+* Where to put downloadable files like PDFs (current code refers to https://docs.wixstatic.com) - and how to insert download links to those files in the content
 * How to preserve existing old website links - for example, a link like https://www.talentbeyondboundaries.org/s/TBB-IT-Candidates-Packet.pdf should still work when we have switched to this new website
 
 # Gulper
