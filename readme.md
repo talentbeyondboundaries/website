@@ -1,5 +1,10 @@
 # How to make changes to TBB website
 Can we add some instructions here to allow people who just understand a bit of HTML how to make content changes to the website?
+Suggested topics:
+* How to update production website from here
+* How to change basic content
+* Where to put downloadable files like PDFs (current code refers to https://docs.wixstatic.com) - and to link to those files
+* How to preserve existing old website links - for example, a link like https://www.talentbeyondboundaries.org/s/TBB-IT-Candidates-Packet.pdf should still work when we have switched to this new website
 
 # Gulper
 Ultimate badassery - makes life a lot easier when working with simple HTML/CSS/JS projects and static stuff. Uses [Nunjucks](https://mozilla.github.io/nunjucks/) templating engine.
