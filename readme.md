@@ -1,3 +1,6 @@
+# How to make changes to TBB website
+Can we add some instructions here to allow people who just understand a bit of HTML how to make content changes to the website?
+
 # Gulper
 Ultimate badassery - makes life a lot easier when working with simple HTML/CSS/JS projects and static stuff. Uses [Nunjucks](https://mozilla.github.io/nunjucks/) templating engine.
 
