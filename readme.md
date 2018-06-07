@@ -1,10 +1,19 @@
 # How to make changes to TBB website
-Can we add some instructions here to allow people who just understand a bit of HTML how to make content changes to the website?
-Suggested topics:
-* How to update production website from here
-* How to change basic content
-* Where to put downloadable files like PDFs (current code refers to https://docs.wixstatic.com) - and how to insert download links to those files in the content
-* How to preserve existing old website links - for example, a link like https://www.talentbeyondboundaries.org/s/TBB-IT-Candidates-Packet.pdf should still work when we have switched to this new website
+* Change content by modifying the HTML and other files under the `src` directory.
+* Downloadable files like PDFs are stored in `dist\s`. 
+Images are stored in `dist\images`.  
+* The gulp tasks process the files in src, constructing static HTML which is 
+copied into the `dist` directory - which is the content that is actually served 
+up as the website.   
+* Once the changes are made, push them to github (both the `src` and `dist`
+directories). 
+* The website is hosted from gh-pages of talentbeyondboundaries Github account - See https://help.github.com/articles/using-a-custom-domain-with-github-pages/ 
+  
+  The git command for pushing to gh-pages is:
+  
+  `git subtree push --prefix dist origin gh-pages`
+  
+  For more technical details on the hosting of the website see [this doc](https://docs.google.com/document/d/11b2mM3gAYk2aRGXQp8vJx0vMbO_Ht301SRuIfGFF2h0/edit#heading=h.gqh4mogqiiqn). 
 
 # Gulper
 Ultimate badassery - makes life a lot easier when working with simple HTML/CSS/JS projects and static stuff. Uses [Nunjucks](https://mozilla.github.io/nunjucks/) templating engine.
