@@ -2,9 +2,10 @@
 * Change content by modifying the HTML and other files under the `src` directory.
 * Downloadable files like PDFs are stored in `dist\s`. 
 Images are stored in `dist\images`.  
-* The gulp tasks process the files in src, constructing static HTML which is 
-copied into the `dist` directory - which is the content that is actually served 
-up as the website.   
+* The gulp tasks (see below) process the files in `src`, 
+constructing static HTML which is 
+copied into the `dist` directory. `dist` (distribution) holds the content that 
+is actually served up as the website.   
 * Once the changes are made, push them to github (both the `src` and `dist`
 directories). 
 * The website is hosted from gh-pages of talentbeyondboundaries Github account - See https://help.github.com/articles/using-a-custom-domain-with-github-pages/ 
