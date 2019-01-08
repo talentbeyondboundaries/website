@@ -37,12 +37,12 @@ $(document).ready(function() {
 
 	// Homepage show video slide in popup
 	(function() {
-		setTimeout(function() {
-			$('.popup--watch-video').fadeIn(1200).on('click', '.popup__dismiss', function(e) {
-				e.preventDefault();
-				$(this).closest('.popup').remove();
-			});
-		}, 10000);
+		// setTimeout(function() {
+		// 	$('.popup--watch-video').fadeIn(1200).on('click', '.popup__dismiss', function(e) {
+		// 		e.preventDefault();
+		// 		$(this).closest('.popup').remove();
+		// 	});
+		// }, 10000);
 	})();
 
 	// Set slider slide down button position (to hug bottom of the screen)
