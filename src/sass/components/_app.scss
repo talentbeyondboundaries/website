@@ -12,7 +12,7 @@
 	z-index: 30;
 
 	@include breakpoint(1024) {
-		.tbb-header__nav,
+		.tbb-header__removable,
 		.social-icons {
 			display: none;
 		}
@@ -52,7 +52,7 @@
 	}
 
 	&__nav > li > a,
-	&__nav > li > .dropdown__toggle {
+	&__nav > li > .dropdown__toggle :not(.dropdown__strong) {
 
 		&:hover {
 			color: $color-blue;
