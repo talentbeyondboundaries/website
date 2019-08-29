@@ -195,3 +195,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/intellij,node,sass,linux,macos,windows
+/.idea/
