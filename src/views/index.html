@@ -172,11 +172,22 @@
             <div>
                 <img class="horizontal-logo popup-toggle" src="images/homepage/partners/ico-cameron.png" alt="Cameron Foundation" data-popup-target=".popup--cameron">
             </div>
+        </div>
+        <div class="home-partners__grid">
             <div>
                 <img class="horizontal-logo popup-toggle" src="images/homepage/partners/ico-morrisgroup.png" alt="Morris Family Foundation" data-popup-target=".popup--morris">
             </div>
             <div>
                 <img class="horizontal-logo popup-toggle" src="images/homepage/partners/ico-imfgivingtogether.jpg" alt="IMF Giving Together" data-popup-target=".popup--imfgivingtogether">
+            </div>
+            <div>
+                <img class="horizontal-logo popup-toggle" src="images/funders/ico-minderoo.png" alt="Minderoo Foundation" data-popup-target=".popup--minderoo">
+            </div>
+            <div>
+                <img class="horizontal-logo popup-toggle" src="images/funders/ico-bennelong.png" alt="Bennelong Foundation" data-popup-target=".popup--bennelong">
+            </div>
+            <div>
+                <img class="horizontal-logo popup-toggle" src="images/funders/ico-neilson.png" alt="Neilson Foundation" data-popup-target=".popup--neilson">
             </div>
         </div>
     </div>
@@ -195,6 +206,38 @@
     }) }}
 
     {% import "popups/homepage/partner.html" as popup %}
+
+    {{ popup.data({
+        selector: 'popup--minderoo',
+        name: 'Minderoo Foundation',
+        title: 'TBB Funder​',
+        description: "Minderoo Foundation is a modern philanthropic organisation which takes on tough, persistent issues with the potential to drive massive change. Minderoo incubates ideas and accelerates impact, pushing the limits of what is believed possible. Minderoo is proudly Australian, and one of Asia’s largest philanthropies, with AUD $1.5 billion committed to a range of global initiatives."
+    }) }}
+
+    {{ popup.data({
+        selector: 'popup--bennelong',
+        name: 'Bennelong Foundation',
+        title: 'TBB Funder​',
+        description: "
+Bennelong Foundation aims to enhance community wellbeing and
+provide opportunities for positive and lasting change in our
+community. The Foundation was established in 2002 by the
+Bangarra Group and provides support to a number of
+organisations and community projects across Australia.
+"
+    }) }}
+
+    {{ popup.data({
+        selector: 'popup--neilson',
+        name: 'Neilson Foundation',
+        title: 'TBB Funder​',
+        description: "
+The Neilson Foundation was established in 2007 to support
+both the arts, and charities that work towards social
+cohesion. The Foundation has distributed over 70 million
+dollars to such causes since its inception.
+"
+    }) }}
 
     {{ popup.data({
         selector: 'popup--unhcr',
