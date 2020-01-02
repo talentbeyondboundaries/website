@@ -5,7 +5,6 @@ var uglifycss = require('gulp-uglifycss');
 var sass = require('gulp-sass');
 var autoprefix = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
-var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 var nunjucksRender = require('gulp-nunjucks-render');
 var htmlPrettify = require('gulp-html-prettify');
@@ -21,7 +20,7 @@ var paths = {
 	css_dest:           'dist/css',
 	nunjucks_views:     'src/views/**/*.+(html|nunjucks)',
 	nunjucks_templates: 'src/templates'
-}
+};
 
 gulp.task('minifyJS', function() {
 	return gulp.src(paths.js_src)
@@ -54,14 +53,9 @@ gulp.task('uglifyCSS', function() {
 		.pipe(browserSync.stream({match: '**/*.css'}));
 });
 
-gulp.task('compileCSS', function(callback) {
-	runSequence(
-		'sass',
-		'autoprefix',
-		'uglifyCSS',
-		callback
-	);
-});
+gulp.task('compileCSS', gulp.series('sass', 'autoprefix', 'uglifyCSS', function(callback) {
+		callback()
+}));
 
 gulp.task('nunjucks', function() {
 	return gulp.src(paths.nunjucks_views)
@@ -74,16 +68,16 @@ gulp.task('nunjucks', function() {
 		.pipe(gulp.dest(paths.server));
 });
 
-gulp.task('serve', ['compileCSS', 'minifyJS', 'nunjucks'], function() {
+gulp.task('serve', gulp.series('compileCSS', 'minifyJS', 'nunjucks', function() {
 	browserSync.init({
 		server: paths.server
 	});
-	gulp.watch(paths.sass_src, ['compileCSS']);
-	gulp.watch(paths.js_src, ['minifyJS']);
-	gulp.watch(paths.html_src, ['nunjucks']);
+	gulp.watch(paths.sass_src, gulp.series('compileCSS'));
+	gulp.watch(paths.js_src, gulp.series('minifyJS'));
+	gulp.watch(paths.html_src, gulp.series('nunjucks'));
 	gulp.watch(paths.html_dest).on('change', browserSync.reload);
-});
+}));
 
-gulp.task('build', ['compileCSS', 'minifyJS', 'nunjucks']);
+gulp.task('build', gulp.series('compileCSS', 'minifyJS', 'nunjucks'));
 
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.series('serve'));

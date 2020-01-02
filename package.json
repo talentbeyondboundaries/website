@@ -7,20 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.7",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-html-prettify": "0.0.1",
-    "gulp-nunjucks-render": "^2.2.2",
-    "gulp-plumber": "^1.2.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.2.1",
     "gulp-remove-empty-lines": "0.1.0",
-    "gulp-rename": "^1.2.3",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
-    "gulp-uglifycss": "^1.0.9",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
     "run-sequence": "^2.2.1",
-    "sass-lint": "^1.10.2"
+    "sass-lint": "^1.13.1"
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,6 @@
   ],
   "author": "Eugene Normous",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/eugene_normous/gulper#readme"
+  "homepage": "https://bitbucket.org/eugene_normous/gulper#readme",
+  "dependencies": {}
 }
