@@ -27,7 +27,6 @@ Ultimate badassery - makes life a lot easier when working with simple HTML/CSS/J
 * `gulp-sass` - Sass compiler
 * `gulp-autoprefixer` - adds CSS vendor prefixes
 * `gulp-rename` - self explanatory
-* `run-sequence` - run tasks in a sequence
 * `browser-sync` - injects CSS/JS assets when they change, syncs scroll/click events with all browsers/devices
 * `gulp-nunjucks-render` - compiles Nunjucks templates into static HTML files, kicks ass
 * `gulp-html-prettify` - makes sure indentation is consistent when Nunjucks templates are compiled
