@@ -59,6 +59,16 @@
 		}
 	}
 
+	.tbb-corona {
+		color: $color-white;
+		background-color: $color-yellow;
+		font-size: 1.5em;
+
+		a {
+			color: #0eb1e3 !important;
+		}
+	}
+
 	.tbb-header__donate {
 		display: flex;
 		align-items: center;
@@ -124,15 +134,5 @@
 			margin-bottom: 0;
 			font-size: 0.8em;
 		}
-	}
-}
-
-.tbb-header .tbb-corona {
-	color: $color-white;
-	background-color: $color-yellow;
-	font-size: 1.5em;
-
-	a {
-		color: #0eb1e3;
 	}
 }
