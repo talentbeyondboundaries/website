@@ -1,3 +1,5 @@
+# Note that TBB's website has moved off GitHub. This repository is archived.
+
 # How to make changes to TBB website
 * Change content by modifying the HTML and other files under the `src` directory.
 * Downloadable files like PDFs are stored in `dist\s`. 
